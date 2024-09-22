@@ -1,0 +1,223 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.blue-rectangle {
+    position: relative;
+    width: 100%;
+    max-width: 1050px;
+    height: 105px;
+    background-color: turquoise;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    border: 0px solid transparent;
+    padding-top: 25px;
+    transition: background-color 0.3s;
+}
+
+.blue-rectangle:hover {
+    background-color: darkcyan;
+}
+
+.black-section {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 33px;
+    background-color: rgb(0, 255, 0);
+    display: flex;
+}
+
+.text {
+    position: absolute;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+}
+
+.text-20 { left: 20%; }
+.text-40 { left: 40%; }
+.text-60 { left: 60%; }
+.text-80 { left: 80%; }
+
+.transparent-rectangle {
+    width: 100%;
+    max-width: 1050px;
+    height: 500px;
+    background-color: white;
+    margin-top: 0px;
+    box-sizing: border-box;
+}
+
+
+.inner-rectangle {
+    position: absolute;
+    left: 180px;
+    width: 660px;
+    height: 440px;
+    border: 2px solid rgb(161, 161, 161);
+    background-color: rgb(255, 255, 255);
+    top: 160px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.inner-rectangle-text {
+    width: 100%;
+    text-align: center;
+}
+
+.inner-rectangle-images {
+    display: flex;
+    justify-content: space-around;
+}
+
+.inner-image {
+    width: 100px;
+    height: auto;
+    transition: width 0.3s;
+}
+
+.img-1 {
+    position: relative;
+    top: -120px;
+    left: -61px;
+}
+
+.img-2 {
+    position: relative; 
+    top: -120px; 
+    left: -22px; 
+}
+@media (min-width: 600px) {
+    .img-1 {
+        width: 100px;
+    }
+
+    .img-2 {
+        width: 200px;
+        height: 140px;
+    }
+}
+
+.small-rectangle {
+    position: absolute;
+    left: 850px;
+    width: 330px;
+    height: 440px;
+    border: 2px solid rgb(161, 161, 161);
+    background-color: transparent;
+    top: 160px;
+    box-sizing: border-box;
+}
+
+.small-rectangle-text {
+    text-align: center;
+}
+
+.rounded-rectangle {
+    position: absolute;
+    width: 661px;
+    height: 50px;
+    background-color: turquoise;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    top: 140px;
+    left: 180px;
+}
+
+.rounded-rectangle-text {
+    text-align: center;
+}
+
+.rounded-rectangle-small {
+    position: absolute;
+    width: 331px;
+    height: 50px;
+    background-color: turquoise;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    top: 140px;
+    left: 850px;
+}
+.black-rectangle {
+    width: 300px;
+    height: 400px;
+    background-color: transparent;
+    position: absolute;
+    top: 205px;
+    left: 195px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.black-rectangle-text {
+    text-align: left;
+    font-size: 16px;
+    color: black;
+    padding: 5px;
+}
+.white-rectangle {
+    width: 300px;
+    height: 400px;
+    background-color: transparent; 
+    position: absolute;
+    top: 205px;
+    left: 515px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.white-rectangle-text {
+    text-align: left;
+    font-size: 16px;
+    color: black;
+    padding: 5px;
+}
+
+.pink-rectangle {
+    width: 300px;
+    height: 400px; 
+    background-color: transparent; 
+    position: absolute; 
+    top: 355px;
+    left: 905px; 
+    padding: 10px; 
+    box-sizing: border-box; 
+}
+
+.pink-rectangle-text {
+    text-align: left; 
+    font-size: 16px; 
+    color: black; 
+    padding: 5px; 
+}
+.bottom-rectangle {
+    position: relative; 
+    width: 100%; 
+    max-width: 1050px; 
+    height: 50px; 
+    background-color: turquoise; 
+    margin-top: 0; 
+}
+
+.bottom-rectangle-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 16px; 
+    color: black; 
+    padding: 5px; 
+}
