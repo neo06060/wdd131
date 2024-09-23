@@ -1,0 +1,17 @@
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.nav-menu li {
+    margin: 0 1rem;
+}
+.temple-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+}
+.temple-gallery figure img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
