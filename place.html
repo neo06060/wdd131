@@ -6,60 +6,50 @@
     <meta name="description" content="Learn facts about the weather, population, size, and language spoken in Cádiz!">
     <meta name="author" content="Saúl Carracelas">
     <title>Cádiz Information</title>
-
-    <!-- Google Fonts: Correct Usage with Preconnect -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    
-    <!-- External CSS file reference -->
-    <link rel="stylesheet" href="styles/123.css">
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <!-- Header Section with <svg> Icon -->
-    <header>
-        <h1>Cádiz Information</h1>
-        <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="25" cy="25" r="20" stroke="green" stroke-width="2" fill="yellow" />
-        </svg>
-    </header>
-
-    <main>
-        <!-- Main Rectangle Content -->
-        <div class="rectangle">
-            <div class="image-section">
-                <picture>
-                    <source srcset="images/cadiz.webp" media="(min-width: 768px)">
-                    <img src="images/cadiz.webp" alt="Cádiz Image" class="hero-image">
-                </picture>
-                <div class="overlay-text">Cádiz</div>
-            </div>
-            <div class="data-section">
-                <h2>Data</h2>
-                <p>Area: 7,385 sq km</p>
-                <p>Population: 116,979</p>
-                <p>Capital: Cádiz</p>
-                <p>Languages: Spanish</p>
-                <p>Currency: Euros</p>
-                <p>Time Zone: CEST</p>
-                <p>Calling Code: +34</p>
-                <p>Internet TLD: .com</p>
-            </div>
-            <div class="weather-section">
-                <h2>Weather ⛅</h2>
-                <p>Temperature: 22°C</p>
-                <p>Conditions: Partly Cloudy</p>
-                <p>Wind: 14 km/h</p>
-                <p>Wind Chill: <span id="windchill">15</span>°C</p>
-            </div>
-            <div class="footer">
-                <p>©<span id="current-year"></span> Saúl Carracelas, Cádiz</p>
-                <p>Last Modification: <span id="last-modified"></span></p>
-            </div>
+    <div class="centered-rectangle">
+        <!-- Image Section -->
+        <div class="image-section">
+            <picture>
+                <source srcset="images/cadiz.webp" media="(min-width: 768px)">
+                <img src="images/cadiz.webp" alt="Cádiz Image" class="hero-image">
+            </picture>
+            <div class="overlay-text">Cádiz</div>
         </div>
-    </main>
 
-    <!-- External JavaScript file reference -->
+        <!-- Data Section -->
+        <div class="data-section">
+            <h2>Data</h2>
+            <p>Area: 7,385 sq km</p>
+            <p>Population: 116,979</p>
+            <p>Capital: Cádiz</p>
+            <p>Languages: Spanish</p>
+            <p>Currency: Euros</p>
+            <p>Time Zone: CEST</p>
+            <p>Calling Code: +34</p>
+            <p>Internet TLD: .es</p>
+        </div>
+
+        <!-- Weather Section -->
+        <div class="weather-section">
+            <h2>Weather <span class="weather-icon">⛅</span></h2>
+            <p>Temperature: 22°C</p>
+            <p>Conditions: Partly Cloudy</p>
+            <p>Wind: 14 km/h</p>
+            <p>Wind Chill: 15°C</p>
+        </div>
+        
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>©<span id="current-year"></span> Saúl Carracelas, Cádiz</p>
+            <p>Last Modification: <span id="last-modified"></span></p>
+        </div>
+    </div>
+    <!-- Link to external JavaScript file -->
     <script src="js/script.js" defer></script>
 </body>
 </html>
