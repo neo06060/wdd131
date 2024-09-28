@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Rectangle with Information</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center; 
+            align-items: center;    
+            height: 100vh;        
+            margin: 0;            
+            background-color: #f0f0f0; 
+            font-family: Arial, sans-serif;
+        }
+
+        .rectangle {
+            width: 500px;            
+            height: 1300px;         
+            background-color: #ffffff; 
+            border: 2px solid #333; 
+            padding: 20px;         
+            overflow: auto;      
+            position: relative;     
+        }
+
+        h2 {
+            color: #333;           
+            text-align: center;     
+        }
+
+        p {
+            line-height: 1.5;       
+            text-align: center;      
+        }
+
+        .footer {
+            margin-top: 20px;       
+            font-size: 0.8em;        
+            text-align: center;      
+        }
+
+        .image-section {
+            position: relative;      
+            text-align: center;      
+            margin-bottom: 20px;     
+        }
+
+        .image-section img {
+            max-width: 100%;        
+            height: auto;           
+            padding: 10px;          
+            border-radius: 8px;     
+        }
+
+        .overlay-text {
+            position: absolute;      
+            top: 10%;                
+            left: 50%;              
+            transform: translate(-50%, -50%); 
+            color: white;           
+            font-size: 24px;        
+            background-color: rgba(0, 0, 0, 0.7); 
+            padding: 10px 20px;     
+            border-radius: 5px;     
+            margin: 10px;           
+        }
+    </style>
+</head>
+<body>
+    <div class="rectangle">
+        <div class="image-section">
+            <picture>
+                <source srcset="images/cadiz.webp" media="(min-width: 768px)">
+                <img src="images/cadiz.webp" alt="Lemur Image" class="hero-image">
+            </picture>
+            <div class="overlay-text">Cádiz</div>
+        </div>
+        <div class="data-section">
+            <h2>Data</h2>
+            <p>Area: 7,385 sq km</p>
+            <p>Population: 116,979</p>
+            <p>Capital: Cadiz</p>
+            <p>Languages: Spanish</p>
+            <p>Currency: Euros</p>
+            <p>Time Zone: CEST</p>
+            <p>Calling Code: +34</p>
+            <p>Internet TLD: .com</p>
+        </div>
+        <div class="weather-section">
+            <h2>Weather <span class="weather-icon">⛅</span></h2>
+            <p>Temperature: 22°C</p>
+            <p>Conditions: Partly Cloudy</p>
+            <p>Wind: 14 km/h</p>
+            <p>Wind Chill: <span id="windchill">15</span>°C</p>
+        </div>
+        <div class="footer">
+            <p>©<span id="current-year"></span> Saúl Carracelas, Cádiz</p>
+            <p>Last Modification: <span id="last-modified"></span></p>
+        </div>
+    </div>
+    <script src="js/script.js" defer></script>
+</body>
+</html>
