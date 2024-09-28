@@ -6,88 +6,33 @@
     <meta name="description" content="Learn facts about the weather, population, size, and language spoken in Cádiz!">
     <meta name="author" content="Saúl Carracelas">
     <title>Cádiz Information</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center; 
-            align-items: center;    
-            height: 100vh;        
-            margin: 0;            
-            background-color: #f0f0f0; 
-            font-family: Arial, sans-serif;
-        }
 
-        .rectangle {
-            width: 500px;            
-            height: 1300px;         
-            background-color: #ffffff; 
-            border: 2px solid #333; 
-            padding: 20px;         
-            overflow: auto;      
-            position: relative;     
-        }
-
-        h2 {
-            color: #333;           
-            text-align: center;     
-        }
-
-        p {
-            line-height: 1.5;       
-            text-align: center;      
-        }
-
-        .footer {
-            margin-top: 20px;       
-            font-size: 0.8em;        
-            text-align: center;      
-        }
-
-        .image-section {
-            position: relative;      
-            text-align: center;      
-            margin-bottom: 20px;     
-        }
-
-        .image-section img {
-            max-width: 100%;        
-            height: auto;           
-            padding: 10px;          
-            border-radius: 8px;     
-        }
-        .overlay-text {
-            position: absolute;      
-            top: 10%;                
-            left: 50%;              
-            transform: translate(-50%, -50%); 
-            color: white;           
-            font-size: 24px;        
-            background-color: rgba(0, 0, 0, 0.7); 
-            padding: 10px 20px;     
-            border-radius: 5px;     
-            margin: 10px;           
-        }
-        svg {
-            display: block;
-            margin: 0 auto 20px;
-        }
-    </style>
+    <!-- Google Fonts: Correct Usage with Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- External CSS file reference -->
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+    <!-- Header Section with <svg> Icon -->
     <header>
+        <h1>Cádiz Information</h1>
         <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="25" cy="25" r="20" stroke="transparent" stroke-width="2" fill="transparent" />
+            <circle cx="25" cy="25" r="20" stroke="green" stroke-width="2" fill="yellow" />
         </svg>
     </header>
 
     <main>
+        <!-- Main Rectangle Content -->
         <div class="rectangle">
             <div class="image-section">
                 <picture>
                     <source srcset="images/cadiz.webp" media="(min-width: 768px)">
                     <img src="images/cadiz.webp" alt="Cádiz Image" class="hero-image">
                 </picture>
-                <h1><div class="overlay-text">Cádiz</div></h1>
+                <div class="overlay-text">Cádiz</div>
             </div>
             <div class="data-section">
                 <h2>Data</h2>
@@ -101,7 +46,7 @@
                 <p>Internet TLD: .com</p>
             </div>
             <div class="weather-section">
-                <h2>Weather <span class="weather-icon">⛅</span></h2>
+                <h2>Weather ⛅</h2>
                 <p>Temperature: 22°C</p>
                 <p>Conditions: Partly Cloudy</p>
                 <p>Wind: 14 km/h</p>
@@ -114,6 +59,7 @@
         </div>
     </main>
 
+    <!-- External JavaScript file reference -->
     <script src="js/script.js" defer></script>
 </body>
 </html>
