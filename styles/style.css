@@ -1,4 +1,3 @@
-
 /* Global Variables */
 :root {
     --background-color: #000;
@@ -108,7 +107,3 @@ body {
         max-width: 900px; /* Wider rectangle on larger screens */
     }
 }
-
-
-
-
