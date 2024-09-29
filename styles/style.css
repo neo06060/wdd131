@@ -52,19 +52,6 @@ body {
     border-radius: 10px;
 }
 
-.overlay-text {
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 24px;
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 10px 20px;
-    border-radius: 5px;
-    margin: 10px;
-}
-
 /* Data Section */
 .data-section h2 {
     margin-bottom: 10px;
@@ -106,6 +93,12 @@ body {
 
 .footer p {
     margin-bottom: 5px;
+}
+
+/* ::after pseudo-element Example */
+.data-section h2::after {
+    content: " 🛈"; /* Adds an info icon after the heading */
+    font-size: 1.2rem;
 }
 
 /* Media Queries */
