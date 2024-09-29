@@ -27,16 +27,14 @@ nav {
 .nav-menu li {
     margin: 0.5rem 0;
 }
-.nav-menu button {
-    background: none;
-    border: none;
+.nav-menu a {
     color: white;
     text-decoration: none;
     font-size: 1.2rem;
-    cursor: pointer;
 }
-.nav-menu button:hover {
+.nav-menu a:hover {
     text-decoration: underline;
+    color: #ff0; 
 }
 .hamburger {
     background: none;
