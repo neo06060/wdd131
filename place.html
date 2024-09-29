@@ -14,14 +14,11 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <!-- Header moved before the main section -->
-    <header>
-        <h1>Cádiz Information</h1>
-    </header>
-    
     <main>
         <div class="centered-rectangle">
             <div class="image-section">
+                <!-- Position Cádiz Information on top of the image -->
+                <h1>Cádiz Information</h1>
                 <picture>
                     <source srcset="images/cadiz.webp" media="(min-width: 768px)">
                     <img src="images/cadiz.webp" alt="Cádiz Image" class="hero-image">
@@ -50,13 +47,13 @@
                 <p>Wind Chill: 15°C</p>
             </div>
         </div>
-    </main>
 
-    <!-- Footer -->
-    <div class="footer">
-        <p>©<span id="current-year"></span> Saúl Carracelas, Cádiz</p>
-        <p>Last Modification: <span id="last-modified"></span></p>
-    </div>
+        <!-- Footer -->
+        <div class="footer">
+            <p>©<span id="current-year"></span> Saúl Carracelas, Cádiz</p>
+            <p>Last Modification: <span id="last-modified"></span></p>
+        </div>
+    </main>
 
     <!-- Link to external JavaScript file -->
     <script src="scripts/script.js" defer></script>
