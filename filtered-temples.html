@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtered Temple Album</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css" media="screen and (min-width: 768px)">
+    <script defer src="scripts/filtered-temples.js"></script>
+    <meta name="description" content="These are a few temples that I like a lot. Filter them by criteria.">
+    <meta name="author" content="Saúl Carracelas">
+</head>
+<body>
+    <header>
+        <h1>Temples</h1>
+        <nav>
+            <ul class="nav-menu">
+                <li><button id="all">Home</button></li>
+                <li><button id="old">Old</button></li>
+                <li><button id="new">New</button></li>
+                <li><button id="large">Large</button></li>
+                <li><button id="small">Small</button></li>
+            </ul>
+            <button class="hamburger" aria-label="Menu">&#9776;</button>
+        </nav>
+    </header>
+    <main>
+        <h2>Filtered Temples</h2>
+        <section id="temples-container" class="temple-gallery">
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> Saúl Carracelas</p>
+        <p>Last Updated: <span id="last-modified"></span></p>
+    </footer>
+</body>
+</html>
