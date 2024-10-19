@@ -68,3 +68,9 @@ header {
 .right .text-box {
     right: 370px; 
 }
+.content-center {
+    text-align: center;
+    padding: 30px;
+    color: #ffffff;
+    font-size: 18px;
+}
