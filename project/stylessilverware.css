@@ -62,9 +62,9 @@ header {
 }
 
 .left .text-box {
-    left: 370px; /* Adjusted position for left side */
+    left: 370px;
 }
 
 .right .text-box {
-    right: 370px; /* Adjusted position for right side */
+    right: 370px; 
 }
