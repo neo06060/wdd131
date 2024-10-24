@@ -60,6 +60,13 @@ fieldset {
     border: none;
 }
 
+/* Golden stars styling */
+.star {
+    color: gold; /* Golden color for stars */
+    font-size: 24px; /* Increase size for better visibility */
+    margin-left: 5px; /* Space between radio button and star */
+}
+
 input[type="submit"] {
     background-color: #28a745; /* Green submit button */
     color: white;
