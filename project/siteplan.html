@@ -1,24 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="This webpage talks about silverware and some interesting things about them">
     <meta name="author" content="Saúl Carracelas">
     <title>Silverware Wikipedia</title>
-
-    <!-- Google Fonts for Typography -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
-    
-    <!-- CSS Stylesheet -->
     <link rel="stylesheet" href="stylessilverware.css">
 </head>
-
 <body>
     <header>
+        <button id="menuButton" class="menu-btn">&#9776;</button>
         <h1>Silverware Wikipedia</h1>
     </header>
+    <div id="sidePanel" class="side-panel">
+        <h2>Color Schema</h2>
+        <table>
+            <tr>
+                <th>Color</th>
+                <th>Hex Value</th>
+            </tr>
+            <tr>
+                <td>Background</td>
+                <td>#2A2A2A (Dark Gray)</td>
+            </tr>
+            <tr>
+                <td>Header</td>
+                <td>#777777 (Light Gray)</td>
+            </tr>
+            <tr>
+                <td>Text</td>
+                <td>#FFFFFF (White)</td>
+            </tr>
+        </table>
+
+        <h2>Typography</h2>
+        <table>
+            <tr>
+                <th>Font</th>
+                <th>Applied To</th>
+            </tr>
+            <tr>
+                <td>Playfair Display</td>
+                <td>Headers (h1)</td>
+            </tr>
+            <tr>
+                <td>Roboto</td>
+                <td>Body Text (p, div, span)</td>
+            </tr>
+        </table>
+    </div>
 
     <main>
         <div class="content-center">
@@ -27,7 +59,6 @@
             <p>What is the purpose of it? To teach people about some silverware I handpicked (they are my favourite silverware).</p>
             <p>Will you add more silverware to the page? Surely I will, though I will need to inform myself about the ones I will add later on.</p>
         </div>
-
         <section>
             <h2>Scenarios of Use</h2>
             <ul>
@@ -36,57 +67,49 @@
                 <li><strong>Scenario 3: Educational Tool</strong> - Teachers or students refer to this page for an educational resource about silverware history.</li>
             </ul>
         </section>
-
         <div class="container">
             <div class="item left">
-                <img src="spoon.webp" alt="Spoon" class="image" id="image1" onclick="toggleText('text1')">
+                <img src="spoon.webp" alt="Spoon Image" class="image" id="image1" onclick="toggleText('text1')">
                 <div class="text-box" id="text1">
                     Spoons have been used since ancient times. The largest manufacturer is Cambridge Silversmiths Ltd, producing millions annually, mostly in stainless steel.
                 </div>
             </div>
-
             <div class="item right">
-                <img src="fork.jpg" alt="Fork" class="image" id="image2" onclick="toggleText('text2')">
+                <img src="fork.jpg" alt="Fork Image" class="image" id="image2" onclick="toggleText('text2')">
                 <div class="text-box" id="text2">
                     Forks were introduced in the 11th century and became popular in Europe during the Renaissance. Today, WMF Group leads in production.
                 </div>
             </div>
-
             <div class="item left">
-                <img src="knife.webp" alt="Knife" class="image" id="image3" onclick="toggleText('text3')">
+                <img src="knife.webp" alt="Knife Image" class="image" id="image3" onclick="toggleText('text3')">
                 <div class="text-box" id="text3">
-                    Knives were one of the earliest tools used by humans. Today, Cutco is the largest knife manufacturer in the US.
+                    Knives have been an essential tool for humans since prehistoric times. The most common material for modern knives is stainless steel.
                 </div>
             </div>
-
             <div class="item right">
-                <img src="soup.jpg" alt="Soup Spoon" class="image" id="image4" onclick="toggleText('text4')">
+                <img src="soup.jpg" alt="Teaspoon Image" class="image" id="image4" onclick="toggleText('text4')">
                 <div class="text-box" id="text4">
-                    Soup spoons have a deeper bowl and are mostly produced by Oneida Ltd, a leader in flatware manufacturing.
+                    Teaspoons are smaller than tablespoons and are commonly used for stirring tea or coffee. The term teaspoon also refers to a unit of volume measurement.
                 </div>
             </div>
-
             <div class="item left">
                 <img src="salad.jpg" alt="Salad Fork" class="image" id="image5" onclick="toggleText('text5')">
                 <div class="text-box" id="text5">
                     Salad forks are typically smaller and shorter. Gorham Silver is a well-known company for producing these utensils.
                 </div>
             </div>
-
             <div class="item right">
                 <img src="butter.webp" alt="Butter Knife" class="image" id="image6" onclick="toggleText('text6')">
                 <div class="text-box" id="text6">
                     Butter knives are made with a rounded tip. Reed and Barton is a famous company producing these in various materials.
                 </div>
             </div>
-
             <div class="item left">
                 <img src="tea.webp" alt="Teaspoon" class="image" id="image7" onclick="toggleText('text7')">
                 <div class="text-box" id="text7">
                     Teaspoons are small and typically used for stirring tea or coffee. They are often made from stainless steel or silver-plated metals.
                 </div>
             </div>
-
             <div class="item right">
                 <img src="desert.jpg" alt="Dessert Fork" class="image" id="image8" onclick="toggleText('text8')">
                 <div class="text-box" id="text8">
@@ -95,9 +118,6 @@
             </div>
         </div>
     </main>
-
-    <!-- JavaScript -->
     <script src="scriptsilverware.js"></script>
 </body>
-
 </html>
