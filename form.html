@@ -15,12 +15,12 @@
     <main>
         <h1>Product Review Form</h1>
         <form action="review.html" method="get" id="reviewForm">
-            <label for="productName">Product Name</label>
+            <label for="productName">Product Name <span class="required">*</span></label>
             <select id="productName" name="productName" required>
                 <option value="" disabled selected>Select a Product ...</option>
             </select>
             <fieldset>
-                <legend>Overall Rating</legend>
+                <legend>Overall Rating <span class="required">*</span></legend>
                 <label>
                     <input type="radio" id="rating1" name="rating" value="1" required>
                     ☆
@@ -42,7 +42,7 @@
                     ☆☆☆☆☆
                 </label>
             </fieldset>
-            <label for="installDate">Date of Purchase</label>
+            <label for="installDate">Date of Purchase <span class="required">*</span></label>
             <input type="date" id="installDate" name="installDate" required>
             <fieldset>
                 <legend>Useful Features (check all that apply)</legend>

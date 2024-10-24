@@ -7,7 +7,7 @@
 body {
     font-family: 'Roboto', Arial, sans-serif;
     line-height: 1.6;
-    background-color: #1c1c1c;
+    background-color: #1c1c1c; /* Dark background */
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -19,7 +19,7 @@ body {
 main {
     max-width: 600px;
     width: 100%;
-    background: #333;
+    background: #333; /* Medium gray background */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -28,7 +28,7 @@ main {
 
 h1 {
     text-align: center;
-    color: white;
+    color: #f9f9f9; /* Lighter color for better contrast */
     margin-bottom: 20px;
 }
 
@@ -39,7 +39,12 @@ form {
 
 label, legend {
     margin: 10px 0 5px;
-    color: white;
+    color: #f9f9f9; /* Lighter color for better contrast */
+}
+
+.required {
+    color: #e74c3c; /* Red color for required fields */
+    margin-left: 5px;
 }
 
 input, select, textarea {
@@ -47,7 +52,7 @@ input, select, textarea {
     margin-bottom: 10px;
     border: 1px solid #666;
     border-radius: 5px;
-    background-color: #222;
+    background-color: #222; /* Darker input field */
     color: white;
 }
 
@@ -56,7 +61,7 @@ fieldset {
 }
 
 input[type="submit"] {
-    background-color: #28a745;
+    background-color: #28a745; /* Green submit button */
     color: white;
     border: none;
     padding: 10px;
@@ -66,13 +71,13 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #218838;
+    background-color: #218838; /* Darker green on hover */
 }
 
 footer {
     margin-top: 20px;
     text-align: center;
-    color: white;
+    color: #f9f9f9; /* Lighter color for better contrast */
     font-size: 14px;
 }
 
@@ -84,3 +89,4 @@ footer {
         font-size: 16px;
     }
 }
+

@@ -11,3 +11,4 @@ function toggleText(id) {
         textBox.style.display = "block";
     }
 }
+

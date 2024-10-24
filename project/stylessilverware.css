@@ -5,17 +5,42 @@
 }
 
 body {
-    background-color: #2a2a2a;
-    color: #ffffff;
-    font-family: Arial, sans-serif;
+    background-color: #2A2A2A; /* Dark Gray Background */
+    color: #FFFFFF; /* White Text for Readability */
+    font-family: 'Roboto', sans-serif; /* Body Font */
 }
 
 header {
-    background-color: #777777;
+    background-color: #C0C0C0; /* Silver Header Background */
     padding: 20px;
     text-align: center;
-    color: white;
-    font-size: 24px;
+    color: #FFFFFF;
+    font-family: 'Playfair Display', serif; /* Elegant Font for Header */
+    font-size: 32px;
+    font-weight: bold;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px;
+    font-family: 'Playfair Display', serif; /* Font for Headings */
+}
+
+section {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    color: #FFFFFF;
+}
+
+section ul {
+    display: inline-block; /* Centers the List */
+    text-align: left; /* Keeps List Items Left-Aligned */
+}
+
+section li {
+    margin: 10px 0;
+    font-size: 18px;
 }
 
 .container {
@@ -44,8 +69,12 @@ header {
 .image {
     width: 350px;
     height: 350px;
-    background-color: #00aaff;
     cursor: pointer;
+    transition: border 0.3s ease;
+}
+
+.image:hover {
+    border: 3px solid #DAA520; /* Gold Border on Hover */
 }
 
 .text-box {
@@ -58,7 +87,7 @@ header {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    color: #ffffff;
+    color: #FFFFFF;
 }
 
 .left .text-box {
@@ -66,11 +95,16 @@ header {
 }
 
 .right .text-box {
-    right: 370px; 
+    right: 370px;
 }
+
 .content-center {
     text-align: center;
     padding: 30px;
-    color: #ffffff;
     font-size: 18px;
+    color: #FFFFFF;
+}
+
+a, .image {
+    color: #4A90E2; /* Soft Blue for Clickable Links */
 }

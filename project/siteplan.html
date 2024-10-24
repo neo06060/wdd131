@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This webpage talks about silverware and some Interesting things about them">
+    <meta name="description" content="This webpage talks about silverware and some interesting things about them">
     <meta name="author" content="Saúl Carracelas">
     <title>Silverware Wikipedia</title>
+
+    <!-- Google Fonts for Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    
+    <!-- CSS Stylesheet -->
     <link rel="stylesheet" href="stylessilverware.css">
-</head><body>
+</head>
+
+<body>
     <header>
         <h1>Silverware Wikipedia</h1>
     </header>
+
     <main>
         <div class="content-center">
             <p>What is this page about? It is about information of some silverware.</p>
@@ -18,58 +27,77 @@
             <p>What is the purpose of it? To teach people about some silverware I handpicked (they are my favourite silverware).</p>
             <p>Will you add more silverware to the page? Surely I will, though I will need to inform myself about the ones I will add later on.</p>
         </div>
+
+        <section>
+            <h2>Scenarios of Use</h2>
+            <ul>
+                <li><strong>Scenario 1: Casual User</strong> - A curious visitor clicks images to learn about various silverware types.</li>
+                <li><strong>Scenario 2: Collector</strong> - A silverware collector uses the information for their collection based on manufacturers.</li>
+                <li><strong>Scenario 3: Educational Tool</strong> - Teachers or students refer to this page for an educational resource about silverware history.</li>
+            </ul>
+        </section>
+
         <div class="container">
             <div class="item left">
-                <img src="spoon.webp" alt="image1" class="image" id="image1" onclick="toggleText('text1')">
+                <img src="spoon.webp" alt="Spoon" class="image" id="image1" onclick="toggleText('text1')">
                 <div class="text-box" id="text1">
                     Spoons have been used since ancient times. The largest manufacturer is Cambridge Silversmiths Ltd, producing millions annually, mostly in stainless steel.
                 </div>
             </div>
+
             <div class="item right">
-                <img src="fork.jpg" alt="image2" class="image" id="image2" onclick="toggleText('text2')">
+                <img src="fork.jpg" alt="Fork" class="image" id="image2" onclick="toggleText('text2')">
                 <div class="text-box" id="text2">
                     Forks were introduced in the 11th century and became popular in Europe during the Renaissance. Today, WMF Group leads in production.
                 </div>
             </div>
+
             <div class="item left">
-                <img src="knife.webp" alt="image3" class="image" id="image3" onclick="toggleText('text3')">
+                <img src="knife.webp" alt="Knife" class="image" id="image3" onclick="toggleText('text3')">
                 <div class="text-box" id="text3">
                     Knives were one of the earliest tools used by humans. Today, Cutco is the largest knife manufacturer in the US.
                 </div>
             </div>
+
             <div class="item right">
-                <img src="soup.jpg" alt="image4" class="image" id="image4" onclick="toggleText('text4')">
+                <img src="soup.jpg" alt="Soup Spoon" class="image" id="image4" onclick="toggleText('text4')">
                 <div class="text-box" id="text4">
                     Soup spoons have a deeper bowl and are mostly produced by Oneida Ltd, a leader in flatware manufacturing.
                 </div>
             </div>
+
             <div class="item left">
-                <img src="salad.jpg" alt="image5" class="image" id="image5" onclick="toggleText('text5')">
+                <img src="salad.jpg" alt="Salad Fork" class="image" id="image5" onclick="toggleText('text5')">
                 <div class="text-box" id="text5">
                     Salad forks are typically smaller and shorter. Gorham Silver is a well-known company for producing these utensils.
                 </div>
             </div>
+
             <div class="item right">
-                <img src="butter.webp" alt="image6" class="image" id="image6" onclick="toggleText('text6')">
+                <img src="butter.webp" alt="Butter Knife" class="image" id="image6" onclick="toggleText('text6')">
                 <div class="text-box" id="text6">
                     Butter knives are made with a rounded tip. Reed and Barton is a famous company producing these in various materials.
                 </div>
             </div>
+
             <div class="item left">
-                <img src="tea.webp" alt="image7" class="image" id="image7" onclick="toggleText('text7')">
+                <img src="tea.webp" alt="Teaspoon" class="image" id="image7" onclick="toggleText('text7')">
                 <div class="text-box" id="text7">
                     Teaspoons are small and typically used for stirring tea or coffee. They are often made from stainless steel or silver-plated metals.
                 </div>
             </div>
+
             <div class="item right">
-                <img src="desert.jpg" alt="image8" class="image" id="image8" onclick="toggleText('text8')">
+                <img src="desert.jpg" alt="Dessert Fork" class="image" id="image8" onclick="toggleText('text8')">
                 <div class="text-box" id="text8">
                     Dessert forks are smaller than standard forks, with Cambridge Silversmiths being a major manufacturer.
                 </div>
             </div>
         </div>
     </main>
+
+    <!-- JavaScript -->
     <script src="scriptsilverware.js"></script>
 </body>
-</html>
 
+</html>
