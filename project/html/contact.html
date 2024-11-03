@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact page for Silverware Wikipedia">
+    <meta name="author" content="Saúl Carracelas">
+    <title>Contact - Silverware Wikipedia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <!-- Ruta corregida para el archivo CSS -->
+    <link rel="stylesheet" href="../css/stylessilverware.css">
+</head>
+<body>
+    <header>
+        <button id="menuButton" class="menu-btn">&#9776;</button>
+        <h1>Contact Us</h1>
+        <nav>
+            <!-- Rutas corregidas para los enlaces de navegación -->
+            <a href="siteplan.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <div id="sidePanel" class="side-panel">
+        <h2>Color Schema</h2>
+        <table>
+            <tr><th>Color</th><th>Hex Value</th></tr>
+            <tr><td>Background</td><td>#2A2A2A (Dark Gray)</td></tr>
+            <tr><td>Header</td><td>#777777 (Light Gray)</td></tr>
+            <tr><td>Text</td><td>#FFFFFF (White)</td></tr>
+        </table>
+        <h2>Typography</h2>
+        <table>
+            <tr><th>Font</th><th>Applied To</th></tr>
+            <tr><td>Playfair Display</td><td>Headers (h1)</td></tr>
+            <tr><td>Roboto</td><td>Body Text (p, div, span)</td></tr>
+        </table>
+    </div>
+    <main>
+        <div class="form-container">
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+    <!-- Ruta corregida para el archivo JavaScript -->
+    <script src="../js/scriptsilverware.js"></script>
+</body>
+</html>

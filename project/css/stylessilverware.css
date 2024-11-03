@@ -142,3 +142,48 @@ section ul li {
     margin: 10px 0;
     text-align: center;
 }
+
+/* Contact Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 400px;
+    margin: auto;
+    gap: 10px;
+}
+
+form label {
+    color: #ffffff;
+    font-size: 18px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #777777;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #777777;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+form button:hover {
+    background-color: #00aaff;
+}
+.form-container {
+    background-color: #444444;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    margin: 40px auto;
+    width: 80%;
+    max-width: 450px;
+}

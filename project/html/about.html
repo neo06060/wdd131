@@ -7,13 +7,21 @@
     <meta name="author" content="Saúl Carracelas">
     <title>Silverware Wikipedia</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="stylessilverware.css">
+    <!-- Ruta corregida para el archivo CSS -->
+    <link rel="stylesheet" href="../css/stylessilverware.css">
 </head>
 <body>
     <header>
         <button id="menuButton" class="menu-btn">&#9776;</button>
         <h1>Silverware Wikipedia</h1>
+        <nav>
+            <!-- Rutas corregidas para los enlaces de navegación -->
+            <a href="siteplan.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
     </header>
+    
     <div id="sidePanel" class="side-panel">
         <h2>Color Schema</h2>
         <table>
@@ -53,71 +61,59 @@
     </div>
 
     <main>
-        <div class="content-center">
-            <p>What is this page about? It is about information of some silverware.</p>
-            <p>Why did you use that name? Wikipedia is used for information, so that is why this is called this way, as this is information about silverware.</p>
-            <p>What is the purpose of it? To teach people about some silverware I handpicked (they are my favourite silverware).</p>
-            <p>Will you add more silverware to the page? Surely I will, though I will need to inform myself about the ones I will add later on.</p>
-        </div>
-        <section>
-            <h2>Scenarios of Use</h2>
-            <ul>
-                <li><strong>Scenario 1: Casual User</strong> - A curious visitor clicks images to learn about various silverware types.</li>
-                <li><strong>Scenario 2: Collector</strong> - A silverware collector uses the information for their collection based on manufacturers.</li>
-                <li><strong>Scenario 3: Educational Tool</strong> - Teachers or students refer to this page for an educational resource about silverware history.</li>
-            </ul>
-        </section>
         <div class="container">
+            <!-- Rutas corregidas para las imágenes -->
             <div class="item left">
-                <img src="spoon.webp" alt="Spoon Image" class="image" id="image1" onclick="toggleText('text1')">
+                <img src="../images/spoon.webp" alt="Spoon Image" class="image" id="image1" onclick="toggleText('text1')">
                 <div class="text-box" id="text1">
                     Spoons have been used since ancient times. The largest manufacturer is Cambridge Silversmiths Ltd, producing millions annually, mostly in stainless steel.
                 </div>
             </div>
             <div class="item right">
-                <img src="fork.jpg" alt="Fork Image" class="image" id="image2" onclick="toggleText('text2')">
+                <img src="../images/fork.jpg" alt="Fork Image" class="image" id="image2" onclick="toggleText('text2')">
                 <div class="text-box" id="text2">
                     Forks were introduced in the 11th century and became popular in Europe during the Renaissance. Today, WMF Group leads in production.
                 </div>
             </div>
             <div class="item left">
-                <img src="knife.webp" alt="Knife Image" class="image" id="image3" onclick="toggleText('text3')">
+                <img src="../images/knife.webp" alt="Knife Image" class="image" id="image3" onclick="toggleText('text3')">
                 <div class="text-box" id="text3">
                     Knives have been an essential tool for humans since prehistoric times. The most common material for modern knives is stainless steel.
                 </div>
             </div>
             <div class="item right">
-                <img src="soup.jpg" alt="Teaspoon Image" class="image" id="image4" onclick="toggleText('text4')">
+                <img src="../images/soup.jpg" alt="Teaspoon Image" class="image" id="image4" onclick="toggleText('text4')">
                 <div class="text-box" id="text4">
                     Teaspoons are smaller than tablespoons and are commonly used for stirring tea or coffee. The term teaspoon also refers to a unit of volume measurement.
                 </div>
             </div>
             <div class="item left">
-                <img src="salad.jpg" alt="Salad Fork" class="image" id="image5" onclick="toggleText('text5')">
+                <img src="../images/salad.jpg" alt="Salad Fork" class="image" id="image5" onclick="toggleText('text5')">
                 <div class="text-box" id="text5">
                     Salad forks are typically smaller and shorter. Gorham Silver is a well-known company for producing these utensils.
                 </div>
             </div>
             <div class="item right">
-                <img src="butter.webp" alt="Butter Knife" class="image" id="image6" onclick="toggleText('text6')">
+                <img src="../images/butter.webp" alt="Butter Knife" class="image" id="image6" onclick="toggleText('text6')">
                 <div class="text-box" id="text6">
                     Butter knives are made with a rounded tip. Reed and Barton is a famous company producing these in various materials.
                 </div>
             </div>
             <div class="item left">
-                <img src="tea.webp" alt="Teaspoon" class="image" id="image7" onclick="toggleText('text7')">
+                <img src="../images/tea.webp" alt="Teaspoon" class="image" id="image7" onclick="toggleText('text7')">
                 <div class="text-box" id="text7">
                     Teaspoons are small and typically used for stirring tea or coffee. They are often made from stainless steel or silver-plated metals.
                 </div>
             </div>
             <div class="item right">
-                <img src="desert.jpg" alt="Dessert Fork" class="image" id="image8" onclick="toggleText('text8')">
+                <img src="../images/desert.jpg" alt="Dessert Fork" class="image" id="image8" onclick="toggleText('text8')">
                 <div class="text-box" id="text8">
                     Dessert forks are smaller than standard forks, with Cambridge Silversmiths being a major manufacturer.
                 </div>
             </div>
         </div>
     </main>
-    <script src="scriptsilverware.js"></script>
+    <!-- Ruta corregida para el archivo JavaScript -->
+    <script src="../js/scriptsilverware.js"></script>
 </body>
 </html>
